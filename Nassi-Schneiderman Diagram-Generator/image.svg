@@ -1,0 +1,123 @@
+<?xml version="1.0" standalone="yes"?>
+<svg width="950" height="1363" x="0" y="0" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .bar {fill: white;pointer-events: all;}
+    .bar:hover { fill: yellow;}
+    .if {fill: lightpink;pointer-events: all;}
+    .if:hover { fill: yellow;}
+    .while{fill: lightgreen;pointer-events: all;}
+    .while:hover { fill: yellow;}
+    .for {fill: #F5B041;pointer-events: all;}
+    .for:hover { fill: yellow;}
+    .repeat {fill: lightblue;pointer-events: all;}
+    .repeat:hover { fill: yellow;}
+    .switch {fill: lightcyan;pointer-events: all;}
+    .switch:hover { fill: yellow;}
+</style>
+
+   <rect class="bar" x="0" y="0" width="950" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="475" y="24" text-anchor="middle" alignment-baseline="center"  fill="black">using VVP = vector &lt;vector &lt;pair&lt;int , int&gt; &gt; &gt;;</text>
+   <rect class="bar" x="0" y="29" width="950" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="475" y="53" text-anchor="middle" alignment-baseline="center"  fill="black">using VI = vector &lt;int&gt;;</text>
+   <rect class="bar" x="0" y="58" width="950" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="475" y="82" text-anchor="middle" alignment-baseline="center"  fill="black">using PI = pair&lt;int , int&gt;;</text>
+   <rect class="bar" x="0" y="87" width="950" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="475" y="111" text-anchor="middle" alignment-baseline="center"  fill="black">VI d;</text>
+   <rect class="bar" x="0" y="116" width="950" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="475" y="140" text-anchor="middle" alignment-baseline="center"  fill="black">VVP G;</text>
+   <rect class="bar" x="0" y="145" width="950" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="475" y="169" text-anchor="middle" alignment-baseline="center"  fill="black">const int Inf = 0x3f3f3f3f;</text>
+   <rect class="bar" x="0" y="174" width="950" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="475" y="198" text-anchor="middle" alignment-baseline="center"  fill="black">int cer , n , s , f , C[50001] , cate , x , T[50001] , cnt , rez[50001];</text>
+   <rect class="bar" x="0" y="203" width="950" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="475" y="227" text-anchor="middle" alignment-baseline="center"  fill="black">cin &gt;&gt; cer &gt;&gt; n &gt;&gt; s &gt;&gt; f;</text>
+   <rect class="bar" x="0" y="232" width="950" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="475" y="256" text-anchor="middle" alignment-baseline="center"  fill="black">G = VVP(n + 1);</text>
+   <rect class="for" x="0" y="261" width="950" height="58" stroke="red" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="475" y="285" text-anchor="middle" alignment-baseline="center"  fill="black">for(int i = 1 ; i &lt;= n ; i++)</text>
+   <rect class="bar" x="14" y="290" width="936" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="482" y="314" text-anchor="middle" alignment-baseline="center"  fill="black">cin &gt;&gt; C[i];</text>
+   <rect class="for" x="0" y="319" width="950" height="174" stroke="red" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="475" y="343" text-anchor="middle" alignment-baseline="center"  fill="black">for(int i = 1 ; i &lt;= n ; i++)</text>
+   <rect class="bar" x="14" y="348" width="936" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="482" y="372" text-anchor="middle" alignment-baseline="center"  fill="black">cin &gt;&gt; cate;</text>
+   <rect class="for" x="14" y="377" width="936" height="116" stroke="red" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="482" y="401" text-anchor="middle" alignment-baseline="center"  fill="black">for(int j = 1 ; j &lt;= cate ; j++)</text>
+   <rect class="bar" x="28" y="406" width="922" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="489" y="430" text-anchor="middle" alignment-baseline="center"  fill="black">cin &gt;&gt; x;</text>
+   <rect class="bar" x="28" y="435" width="922" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="489" y="459" text-anchor="middle" alignment-baseline="center"  fill="black">int cost = max(C[i] , C[x]) / min(C[i] , C[x]);</text>
+   <rect class="bar" x="28" y="464" width="922" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="489" y="488" text-anchor="middle" alignment-baseline="center"  fill="black">G[i].push_back({x , cost});</text>
+   <rect class="bar" x="0" y="493" width="950" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="475" y="517" text-anchor="middle" alignment-baseline="center"  fill="black">d = VI(n + 1, Inf);</text>
+   <rect class="bar" x="0" y="522" width="950" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="475" y="546" text-anchor="middle" alignment-baseline="center"  fill="black">priority_queue&lt;PI, vector&lt;PI&gt;, greater&lt;PI&gt;&gt; Q;</text>
+   <rect class="bar" x="0" y="551" width="950" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="475" y="575" text-anchor="middle" alignment-baseline="center"  fill="black">int y , cost , dist;</text>
+   <rect class="bar" x="0" y="580" width="950" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="475" y="604" text-anchor="middle" alignment-baseline="center"  fill="black">d[x] = 0;</text>
+   <rect class="bar" x="0" y="609" width="950" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="475" y="633" text-anchor="middle" alignment-baseline="center"  fill="black">Q.push({0 , x});</text>
+   <rect class="while" x="0" y="638" width="950" height="435" stroke="green" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="475" y="662" text-anchor="middle" alignment-baseline="center"  fill="black">while(!Q.empty())</text>
+   <rect class="bar" x="14" y="667" width="936" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="482" y="691" text-anchor="middle" alignment-baseline="center"  fill="black">x = Q.top().second;</text>
+   <rect class="bar" x="14" y="696" width="936" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="482" y="720" text-anchor="middle" alignment-baseline="center"  fill="black">dist = Q.top().first;</text>
+   <rect class="bar" x="14" y="725" width="936" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="482" y="749" text-anchor="middle" alignment-baseline="center"  fill="black">Q.pop();</text>
+   <rect class="if" x="14" y="754" width="936" height="87" stroke="magenta" stroke-width="1"/> 
+   <rect class="bar" x="14" y="812" width="468" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="248" y="836" text-anchor="middle" alignment-baseline="center"  fill="black">continue;</text>
+   <line x1="14" y1="754" x2="482" y2="812" stroke="magenta" />
+   <line x1="482" y1="812" x2="950" y2="754" stroke="magenta" />
+   <line x1="14" y1="812" x2="950" y2="812" stroke="magenta" />
+   <text style="font-family:'Lucida Bright'" x="935" y="807" text-anchor="middle" alignment-baseline="center"  fill="black">NU</text>
+   <text style="font-family:'Lucida Bright'" x="29" y="807" text-anchor="middle" alignment-baseline="center"  fill="black">DA</text>
+   <text style="font-family:'Lucida Bright'" x="482" y="783" text-anchor="middle" alignment-baseline="center"  fill="black">if(dist &gt; d[x]) </text>
+   <rect class="for" x="14" y="841" width="936" height="232" stroke="red" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="482" y="865" text-anchor="middle" alignment-baseline="center"  fill="black">for(auto  p : G[x])</text>
+   <rect class="bar" x="28" y="870" width="922" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="489" y="894" text-anchor="middle" alignment-baseline="center"  fill="black">y = p.first;</text>
+   <rect class="bar" x="28" y="899" width="922" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="489" y="923" text-anchor="middle" alignment-baseline="center"  fill="black">cost = p.second;</text>
+   <rect class="if" x="28" y="928" width="922" height="145" stroke="magenta" stroke-width="1"/> 
+   <rect class="bar" x="28" y="986" width="461" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="258" y="1010" text-anchor="middle" alignment-baseline="center"  fill="black">d[y] = d[x] + cost;</text>
+   <rect class="bar" x="28" y="1015" width="461" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="258" y="1039" text-anchor="middle" alignment-baseline="center"  fill="black">Q.push({d[y] , y});</text>
+   <rect class="bar" x="28" y="1044" width="461" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="258" y="1068" text-anchor="middle" alignment-baseline="center"  fill="black">T[y] = x;</text>
+   <line x1="28" y1="928" x2="489" y2="986" stroke="magenta" />
+   <line x1="489" y1="986" x2="950" y2="928" stroke="magenta" />
+   <line x1="28" y1="986" x2="950" y2="986" stroke="magenta" />
+   <text style="font-family:'Lucida Bright'" x="935" y="981" text-anchor="middle" alignment-baseline="center"  fill="black">NU</text>
+   <text style="font-family:'Lucida Bright'" x="43" y="981" text-anchor="middle" alignment-baseline="center"  fill="black">DA</text>
+   <text style="font-family:'Lucida Bright'" x="489" y="957" text-anchor="middle" alignment-baseline="center"  fill="black">if(d[y] &gt; d[x] + cost)</text>
+   <rect class="if" x="0" y="1073" width="950" height="290" stroke="magenta" stroke-width="1"/> 
+   <rect class="bar" x="0" y="1131" width="475" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="237" y="1155" text-anchor="middle" alignment-baseline="center"  fill="black">cout &lt;&lt; d[f];</text>
+   <rect class="bar" x="475" y="1131" width="475" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="712" y="1155" text-anchor="middle" alignment-baseline="center"  fill="black">int poz = T[f];</text>
+   <rect class="bar" x="475" y="1160" width="475" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="712" y="1184" text-anchor="middle" alignment-baseline="center"  fill="black">rez[++cnt] = f;</text>
+   <rect class="while" x="475" y="1189" width="475" height="87" stroke="green" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="712" y="1213" text-anchor="middle" alignment-baseline="center"  fill="black">while(poz != 0)</text>
+   <rect class="bar" x="489" y="1218" width="461" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="719" y="1242" text-anchor="middle" alignment-baseline="center"  fill="black">rez[++cnt] = poz;</text>
+   <rect class="bar" x="489" y="1247" width="461" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="719" y="1271" text-anchor="middle" alignment-baseline="center"  fill="black">poz = T[poz];</text>
+   <rect class="bar" x="475" y="1276" width="475" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="712" y="1300" text-anchor="middle" alignment-baseline="center"  fill="black">cout &lt;&lt; cnt &lt;&lt; '\n';</text>
+   <rect class="for" x="475" y="1305" width="475" height="58" stroke="red" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="712" y="1329" text-anchor="middle" alignment-baseline="center"  fill="black">for(int i = cnt ; i &gt;= 1 ; i--)</text>
+   <rect class="bar" x="489" y="1334" width="461" height="29" stroke="black" stroke-width="1"/> 
+   <text style="font-family:'Lucida Bright'" x="719" y="1358" text-anchor="middle" alignment-baseline="center"  fill="black">cout &lt;&lt; rez[i] &lt;&lt; " ";</text>
+   <line x1="0" y1="1073" x2="475" y2="1131" stroke="magenta" />
+   <line x1="475" y1="1131" x2="950" y2="1073" stroke="magenta" />
+   <line x1="0" y1="1131" x2="950" y2="1131" stroke="magenta" />
+   <text style="font-family:'Lucida Bright'" x="935" y="1126" text-anchor="middle" alignment-baseline="center"  fill="black">NU</text>
+   <text style="font-family:'Lucida Bright'" x="15" y="1126" text-anchor="middle" alignment-baseline="center"  fill="black">DA</text>
+   <text style="font-family:'Lucida Bright'" x="475" y="1102" text-anchor="middle" alignment-baseline="center"  fill="black">if(cer == 1)</text>
+</svg>

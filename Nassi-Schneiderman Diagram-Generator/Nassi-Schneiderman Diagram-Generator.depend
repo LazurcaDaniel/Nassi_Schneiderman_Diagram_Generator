@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1673096548 source:c:\users\daniel\desktop\codeblocks\nassi-schneiderman diagram-generator\create_tree.cpp
+	"nassi.h"
+
+1673096475 c:\users\daniel\desktop\codeblocks\nassi-schneiderman diagram-generator\nassi.h
+	<windef.h>
+	<cstring>
+	<iostream>
+	<windows.h>
+	<Commdlg.h>
+
+1673298056 source:c:\users\daniel\desktop\codeblocks\nassi-schneiderman diagram-generator\desenare.cpp
+	<graphics.h>
+	<iostream>
+	<fstream>
+	"nassi.h"
+
+1673297608 source:c:\users\daniel\desktop\codeblocks\nassi-schneiderman diagram-generator\main.cpp
+	<iostream>
+	<graphics.h>
+	<fstream>
+	"nassi.h"
+
+1673105091 source:c:\users\daniel\desktop\codeblocks\nassi-schneiderman diagram-generator\read_tree.cpp
+	<cstring>
+	<iostream>
+	<fstream>
+	<windows.h>
+	<Commdlg.h>
+	"nassi.h"
+	<string>
+
+1673096548 source:c:\users\daniel\desktop\e2_nassi-schneiderman_lazurca_maxiniuc\nassi-schneiderman diagram-generator\create_tree.cpp
+	"nassi.h"
+
+1673096475 c:\users\daniel\desktop\e2_nassi-schneiderman_lazurca_maxiniuc\nassi-schneiderman diagram-generator\nassi.h
+	<windef.h>
+	<cstring>
+	<iostream>
+	<windows.h>
+	<Commdlg.h>
+
+1673809841 source:c:\users\daniel\desktop\e2_nassi-schneiderman_lazurca_maxiniuc\nassi-schneiderman diagram-generator\desenare.cpp
+	<graphics.h>
+	<iostream>
+	<fstream>
+	"nassi.h"
+
+1673105091 source:c:\users\daniel\desktop\e2_nassi-schneiderman_lazurca_maxiniuc\nassi-schneiderman diagram-generator\read_tree.cpp
+	<cstring>
+	<iostream>
+	<fstream>
+	<windows.h>
+	<Commdlg.h>
+	"nassi.h"
+	<string>
+
+1673809827 source:c:\users\daniel\desktop\e2_nassi-schneiderman_lazurca_maxiniuc\nassi-schneiderman diagram-generator\main.cpp
+	<iostream>
+	<graphics.h>
+	<fstream>
+	"nassi.h"
+

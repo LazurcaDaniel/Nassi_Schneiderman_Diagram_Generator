@@ -1,0 +1,68 @@
+cin>>n
+for(int i=0; i<n; i++)
+{
+	cin>>x[i];
+}
+bool ok=0
+repeat
+{
+	ok=0;
+for (int i=0; i<n; i++)
+	{
+		if(x[i]>x[i+1]
+		{
+			swap(x[i],x[i+1])
+			ok=1;
+		}
+      }
+}
+until(ok==0)
+int i=0
+while(i<n)
+{
+	cout<<x[i]<<" ";
+	i++;
+}
+int cmmdc=0;
+int a=x[0];
+for(int i=1; i<n; i++)
+{
+	int b=x[i];
+	while(b)
+	{	
+		int r = a%b;
+		a=b;
+		b=r;
+      }
+	cmmdc = a;
+	a=cmmdc;
+}
+cout<<"Cel mai mic divizor comun al numerelor este "<<cmmdc;
+switch cmmdc
+	{
+		case cmmdc%3 == 0
+		{
+			if(cmmdc%2==0)
+			{
+				cout<<"DA"
+			}
+			else
+			{
+				cout<<"NU";
+			}
+			break;
+		}
+		case cmmdc%3 == 1
+		{
+			while(cmmdc % 6 !=0)
+			{
+			cmmdc--;
+			}
+			break;
+		}
+		default
+		{
+			cmmdc++;
+			i--;
+		}
+	}
